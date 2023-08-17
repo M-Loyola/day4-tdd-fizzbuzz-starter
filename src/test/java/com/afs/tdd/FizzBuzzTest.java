@@ -9,11 +9,18 @@ public class FizzBuzzTest {
         //Given
         int normalNumber = 1;
         FizzBuzz fizzbuzz = new FizzBuzz();
-        
         //when
         String result = fizzbuzz.countOff(normalNumber);
 
         //Then
         Assertions.assertEquals("1", result);
+    }
+
+    @Test
+    public void should_return_string_fizz_when_countOff_given_a_number_multiple_of_three() {
+        int numberMultipleOf3 = 3;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.countOff(numberMultipleOf3);
+        Assertions.assertEquals("Fizz",actualResult);
     }
 }
