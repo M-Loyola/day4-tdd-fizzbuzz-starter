@@ -6,11 +6,11 @@ public class FizzBuzz {
     }
 
     public String countOff(int number) {
-        if (number %15 == 0 && number %7 == 0) {
+        if (number %105 == 0) {
             return "FizzBuzzWhizz";
-        } else if (number %3 == 0 && number %7 == 0) {
+        } else if (number %21 == 0) {
             return "FizzWhizz";
-        } else if (number %5 == 0 && number %7 == 0) {
+        } else if (number %35 == 0) {
             return "BuzzWhizz";
         } else if (number %15 == 0) {
             return "FizzBuzz";
