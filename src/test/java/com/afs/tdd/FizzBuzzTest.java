@@ -9,6 +9,7 @@ public class FizzBuzzTest {
         //Given
         int normalNumber = 1;
         FizzBuzz fizzbuzz = new FizzBuzz();
+        
         //when
         String result = fizzbuzz.countOff(normalNumber);
 
