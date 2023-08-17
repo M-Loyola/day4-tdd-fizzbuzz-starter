@@ -31,4 +31,12 @@ public class FizzBuzzTest {
         String actualResult = fizzBuzz.countOff(numberMultipleOf5);
         Assertions.assertEquals("Buzz",actualResult);
     }
+
+    @Test
+    public void should_return_string_FizzBuzz_when_countOff_given_a_number_multiple_of_three_and_five() {
+        int numberMultipleOf3And5 = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.countOff(numberMultipleOf3And5);
+        Assertions.assertEquals("FizzBuzz", actualResult);
+    }
 }
