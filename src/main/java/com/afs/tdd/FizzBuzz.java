@@ -5,7 +5,10 @@ public class FizzBuzz {
         System.out.println("Hello world!");
     }
 
-    public String countOff(int normalNumber) {
-        return String.valueOf(normalNumber);
+    public String countOff(int number) {
+        if (number %3 == 0) {
+            return "Fizz";
+        }
+        return String.valueOf(number);
     }
 }
